@@ -1,0 +1,161 @@
+/* Mobile fixed grid */
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * Color, typography and basic layout
+ * Colors:
+ * - #f9f3e9 -> light cream (background)
+ * - #594846 -> Dark brown (body text, rules)
+ * - #42628F -> Dark blue (link text)
+ * - #7b96bc -> Medium-light blue (navigation and footer background)
+ */
+body {
+	background: #f9f3e9;
+	color: #594846;
+	font: 100% "Adobe Caslon Pro", "Hoefler Text", Georgia, "Times New Roman", serif;
+}
+a, a:visited {
+  color: #42628F;
+}
+p {
+  margin: 0.5em 0.25em;
+}
+h1 {
+  font-size: 1.75em;
+	border: solid #594846;
+	border-width: 2px 0;
+	padding: 0.25em;
+  text-align: center;
+  font-variant: small-caps;
+}
+h2 {
+  text-align: center;
+  font-variant: small-caps;
+}
+dl {
+  margin: 0 0.5em;
+}
+dt {
+  font-weight: bold;
+  margin: 0.5em 1em 0.5em 0;
+  border-bottom: 1px dashed #7b96bc;
+}
+.intro {
+  font-size: 1.15em;
+  line-height: 1.3em;
+  text-align: justify;
+  margin: 0.5em;
+  font-weight: bold;
+}
+.navigation {
+  background-color:#7b96bc;
+  border-bottom: 2px solid #594846;
+}
+.navigation ul li {
+  text-align: center;
+  display: block;
+  float: left;
+  padding: 0.25em 0;
+}
+.navigation li a {
+  color: #f9f3e9;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+.header p {
+  margin-left: -1000px;
+}
+.right ul {
+  list-style-image: url('../images/point.png');
+  margin: 0.5em 0 1em 0.5em;
+  padding-left: 1em;
+}
+.right ul li {
+  margin: 0.5em 1em;
+}
+.footer {
+  background-color: #7b96bc;
+  color: #f9f3e9;
+  text-align: center;
+  padding: .5em;
+  font-style: italic;
+}
+
+/* Structure */
+/* Factored Out (Common) */
+.footer {
+  clear: both;
+}
+.header {
+  background:url(../images/walrus.png) no-repeat;
+  clear: both;
+}
+.navigation {
+  min-height: 25px;
+}
+
+/* Desktop-specific; needs adaptation */
+@media screen and (min-width:481px) {
+  body {
+    width: 960px;
+  }
+  .column {
+    margin: 10px 10px 0 0;
+  }
+  .navigation {
+    width: 960px;
+  }
+  .navigation ul li {
+    width: 320px; /* 960/3 */
+  }
+  .header {
+    width: 960px;
+    height: 200px;
+  }
+  .left {
+    width: 240px;
+    float: left;
+  }
+  .right {
+    width: 240px;
+    float: right;
+  }
+  .main {
+    margin: 10px 260px 0 250px;
+  }
+}
+
+/* Mobile/lower-resolution devices */
+@media screen and (max-width:480px) {
+  body {
+    width: 320px;
+  }
+  .column {
+    margin: 1em 0;
+    border-bottom: 1px dashed #7b96bc;
+  }
+  .navigation {
+    width: 320px;
+  }
+  .navigation ul li {
+    width: 105px;
+  }
+  .header {
+    width: 320px;
+    height: 200px;
+  }
+  .left {
+    width: 320px;
+  }
+  .right {
+    width: 320px;
+  }
+  .main {
+    width: 320px;
+  } 
+}
