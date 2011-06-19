@@ -87,11 +87,11 @@ dt {
 }
 
 /* Structure */
-.column {
-  margin: 10px 10px 0 0;
-}
 body {
   width: 960px;
+}
+.column {
+  margin: 10px 10px 0 0;
 }
 .navigation {
   width: 960px;
@@ -101,9 +101,11 @@ body {
   width: 320px; /* 960/3 */
 }
 .header {
-  background:url(../images/walrus.png) no-repeat;
+  background:url(../images/w.png) no-repeat;
   width: 960px;
   height: 200px;
+}
+.header, .footer {
   clear: both;
 }
 .left {
@@ -116,7 +118,5 @@ body {
 }
 .main {
   margin: 10px 260px 0 250px;
-}
-.footer {
-  clear: both;
+  width: 460px;
 }

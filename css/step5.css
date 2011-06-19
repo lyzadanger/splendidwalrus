@@ -88,15 +88,11 @@ dt {
 
 /* Structure */
 /* Factored Out (Common) */
-.column {
-  padding: 0;
-}
-.footer {
+.header, .footer {
   clear: both;
 }
 .header {
-  background:url(../images/walrus.png) no-repeat;
-  clear: both;
+  background:url(../images/w.png) no-repeat;
 }
 .navigation {
   min-height: 25px;
