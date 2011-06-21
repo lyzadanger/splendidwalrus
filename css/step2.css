@@ -92,28 +92,22 @@ dt {
   clear: both;
 }
 .header {
-  background:url(../images/w.png) no-repeat;
+  background:url(w.png) no-repeat;
+  height: 200px;
 }
 .navigation {
   min-height: 25px;
 }
-
 /* Desktop-specific; needs adaptation */
-body {
+/* Structure */
+body, .header, .navigation {
   width: 960px;
 }
 .column {
   margin: 10px 10px 0 0;
 }
-.navigation {
-  width: 960px;
-}
 .navigation ul li {
   width: 320px; /* 960/3 */
-}
-.header {
-  width: 960px;
-  height: 200px;
 }
 .left {
   width: 240px;
@@ -125,4 +119,5 @@ body {
 }
 .main {
   margin: 10px 260px 0 250px;
+  width: 460px;
 }

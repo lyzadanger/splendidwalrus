@@ -87,26 +87,24 @@ dt {
 }
 
 /* Structure */
-body {
+body, .header, .navigation, .footer {
   width: 960px;
+}
+.header, .navigation, .footer {
+  clear: both;
 }
 .column {
   margin: 10px 10px 0 0;
 }
 .navigation {
-  width: 960px;
   min-height: 25px;
 }
 .navigation ul li {
   width: 320px; /* 960/3 */
 }
 .header {
-  background:url(../images/w.png) no-repeat;
-  width: 960px;
+  background:url(w.png) no-repeat;
   height: 200px;
-}
-.header, .footer {
-  clear: both;
 }
 .left {
   width: 240px;

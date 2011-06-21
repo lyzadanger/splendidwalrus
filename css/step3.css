@@ -92,7 +92,8 @@ dt {
   clear: both;
 }
 .header {
-  background:url(../images/w.png) no-repeat;
+  background:url(w.png) no-repeat;
+  height: 200px;
 }
 .navigation {
   min-height: 25px;
@@ -100,21 +101,14 @@ dt {
 
 /* Desktop-specific; needs adaptation */
 @media screen and (min-width:481px) {
-  body {
+  body, .header, .footer, .navigation {
     width: 960px;
   }
   .column {
     margin: 10px 10px 0 0;
   }
-  .navigation {
-    width: 960px;
-  }
   .navigation ul li {
     width: 320px; /* 960/3 */
-  }
-  .header {
-    width: 960px;
-    height: 200px;
   }
   .left {
     width: 240px;
@@ -131,30 +125,17 @@ dt {
 
 /* Mobile/lower-resolution devices */
 @media screen and (max-width:480px) {
-  body {
+  body, .header, .navigation {
     width: 320px;
   }
   .column {
     margin: 1em 0;
     border-bottom: 1px dashed #7b96bc;
   }
-  .navigation {
-    width: 320px;
-  }
   .navigation ul li {
     width: 105px;
   }
-  .header {
-    width: 320px;
-    height: 200px;
-  }
-  .left {
+  .left, .right, .main {
     width: 320px;
   }
-  .right {
-    width: 320px;
-  }
-  .main {
-    width: 320px;
-  } 
 }
