@@ -87,8 +87,8 @@ dt {
 }
 
 /* Structure */
-/* Factored Out (Common) */
-.header, .footer {
+/* Common Structural Elements */
+.header, .footer, .navigation {
   clear: both;
 }
 .header {
@@ -125,7 +125,7 @@ dt {
 
 /* Mobile/lower-resolution devices */
 @media screen and (max-width:480px) {
-  body, .header, .navigation {
+  body, .header, .footer, .navigation {
     width: 320px;
   }
   .column {
@@ -133,7 +133,7 @@ dt {
     border-bottom: 1px dashed #7b96bc;
   }
   .navigation ul li {
-    width: 105px;
+    width: 106.667px;
   }
   .left, .right, .main {
     width: 320px;

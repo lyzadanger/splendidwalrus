@@ -101,17 +101,16 @@ dt {
 img, object {
   max-width: 100%;
 }
-
+.navigation ul li {
+  width: 33.333%;
+}
+.header, .footer, .navigation {
+  width: 100%;
+}
 /* Desktop-specific; needs adaptation */
 @media screen and (min-width:481px) {
   .column {
     margin: 10px 10px 0 0;
-  }
-  .header, .footer, .navigation {
-    width: 100%;
-  }
-  .navigation ul li {
-    width: 33%;
   }
   .left {
     width: 25%;
@@ -131,18 +130,9 @@ img, object {
   body {
     max-width: 20em;
   }
-  .header, .footer, .navigation {
-    width: 100%;
-  }
   .column {
     margin: 1em 0;
     border-bottom: 1px dashed #7b96bc;
-  }
-  .navigation ul li {
-    width: 33.33%;
-  }
-  .header {
-    height: 200px;
   }
   .left, .right, .main {
     width: 100%;
