@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-  <?php if ($step > 1): ?><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /><?php endif; ?>
   <?php
     $step_count = 5;
     $step       = 1;
@@ -9,6 +8,7 @@
       $step = ($_GET['step'] > 0 && $_GET['step'] <= $step_count) ? $_GET['step'] : $step;
     }
   ?>
+  <?php if ($step > 1): ?><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /><?php endif; ?>
   <title>The Splendid Walrus: Public House and Spirits</title>
   <link rel="stylesheet" type="text/css" href="css/step<?php print $step; ?>.css" />
 </head>
