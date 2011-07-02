@@ -41,7 +41,9 @@
     <dt>Call us</dt>
     <dd>+1 (503) 555-1212</dd>
   </dl>
-  <p><object width="230" height="179" type="application/x-shockwave-flash" data="http://www.youtube.com/v/O-jOEAufDQ4?fs=1&amp;hl=en_US&amp;rel=0"><embed src="http://www.youtube.com/v/O-jOEAufDQ4?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="230" height="179" /></object></p>
+  <p><object width="230" height="179" type="application/x-shockwave-flash" data="http://www.youtube.com/v/O-jOEAufDQ4?fs=1&amp;hl=en_US&amp;rel=0"><embed src="http://www.youtube.com/v/O-jOEAufDQ4?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="230" height="179" /></object>
+  
+  </p>
 </div>
 <div class="right column">
   <p class="intro">The Splendid Walrus pub is <em>the</em> place in downtown Portland, Ore., to do all of these things:</p>
@@ -56,9 +58,14 @@
 </div>
 <div class="main column">
   <h2>This month's special</h2>
+  <?php if ($step == 6): ?>
+    <iframe src="http://www.youtube.com/embed/O-jOEAufDQ4" frameborder="0" allowfullscreen style="max-width:100%"></iframe>
+  <?php else: ?>
+  
   <p class="intro">25% off Jazz Hands Vodka: locally-made vodka bliss.</p>
   <p>Jazz Hands Vodka is the newest product from local distiller Awesomesauce. Bright and vivid, it's the perfect warm-weather treat. We've concocted some pretty wonderful custom cocktails to highlight it (try the <em title="There's Tabasco in this!">White Devil</em> or the <em>Regret</em>). Or you can go classic with our ultra-fresh Lemon Drop (made with organic citrus).</p>
-  <p><img src="images/sample.jpg" alt="Tastes wonderful" /></p>
+  <img src="images/sample.jpg" width="430" height="293" alt="Tastes wonderful" />
+  <?php endif; ?>
 </div>
 <div class="footer">
   <p>See you soon! Love, The Splendid Walrus</p>

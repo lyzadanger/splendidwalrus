@@ -1,6 +1,6 @@
 /* Everything Fluid */
 
-/* Reset */
+/* Simple reset */
 * {
 	margin: 0;
 	padding: 0;
@@ -8,6 +8,7 @@
 
 /**
  * Color, typography and basic layout
+ * (Shared for all devices and clients)
  * Colors:
  * - #f9f3e9 -> light cream (background)
  * - #594846 -> Dark brown (body text, rules)
@@ -17,10 +18,10 @@
 body {
 	background: #f9f3e9;
 	color: #594846;
-	font: 100% "Adobe Caslon Pro", "Hoefler Text", Georgia, "Times New Roman", serif;
+	font: 100% "Adobe Caslon Pro", Georgia, "Times New Roman", serif;
 }
 a, a:visited {
-  color: #42628F;
+  color: #42628f;
 }
 p {
   margin: 0.5em 0.25em;
@@ -82,12 +83,12 @@ dt {
   background-color: #7b96bc;
   color: #f9f3e9;
   text-align: center;
-  padding: .5em;
+  padding: .5em 0;
   font-style: italic;
 }
 
 /* Structure */
-/* Factored Out (Common) */
+/* Common structural rules */
 .header, .footer {
   clear: both;
 }
@@ -107,10 +108,11 @@ img, object {
 .header, .footer, .navigation {
   width: 100%;
 }
-/* Desktop-specific; needs adaptation */
+
+/* Wider viewports/higher resolutions (e.g. desktop)  */
 @media screen and (min-width:481px) {
   .column {
-    margin: 10px 10px 0 0;
+    margin: 1.04166667% 1.04166667% 0 0;
   }
   .left {
     width: 25%;
@@ -121,15 +123,12 @@ img, object {
     float: right;
   }
   .main {
-    margin: 10px 27.083% 0 26.041%;
+    margin: 1.04166667% 27.0833333% 0 26.0416667%;
   }
 }
 
 /* Mobile/lower-resolution devices */
 @media screen and (max-width:480px) {
-  body {
-    max-width: 20em;
-  }
   .column {
     margin: 1em 0;
     border-bottom: 1px dashed #7b96bc;

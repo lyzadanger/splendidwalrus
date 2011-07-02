@@ -17,7 +17,7 @@
 body {
 	background: #f9f3e9;
 	color: #594846;
-	font: 100% "Adobe Caslon Pro", "Hoefler Text", Georgia, "Times New Roman", serif;
+	font: 100% "Adobe Caslon Pro", Georgia, "Times New Roman", serif;
 }
 a, a:visited {
   color: #42628F;
@@ -99,15 +99,15 @@ dt {
   min-height: 25px;
 }
 
-/* Desktop-specific; needs adaptation */
-.column {
-  margin: 10px 10px 0 0;
-}
-.navigation ul li {
-  width: 33%;
-}
+/* Desktop-specific */
 .header, .footer, .navigation {
   width: 100%;
+}
+.column {
+  margin: 1.04166667% 1.04166667% 0 0;
+}
+.navigation ul li {
+  width: 33.3333333%;
 }
 .left {
   width: 25%;
@@ -118,5 +118,5 @@ dt {
   float: right;
 }
 .main {
-  margin: 10px 27.083% 0 26.041%;
+  margin: 1.04166667% 27.0833333% 0 26.0416667%;
 }
