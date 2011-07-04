@@ -1,4 +1,4 @@
-/* Mobile fixed grid */
+/* Mobile and desktop fixed grids */
 
 /* Reset */
 * {
@@ -17,7 +17,7 @@
 body {
 	background: #f9f3e9;
 	color: #594846;
-	font: 100% "Adobe Caslon Pro", "Hoefler Text", Georgia, "Times New Roman", serif;
+	font: "Adobe Caslon Pro", "Hoefler Text", Georgia, "Times New Roman", serif;
 }
 a, a:visited {
   color: #42628F;
@@ -87,7 +87,7 @@ dt {
 }
 
 /* Structure */
-/* Common Structural Elements */
+/* Common Structural Rules */
 .header, .footer, .navigation {
   clear: both;
 }
@@ -99,7 +99,7 @@ dt {
   min-height: 25px;
 }
 
-/* Desktop-specific; needs adaptation */
+/* Wider viewports/higher resolutions (e.g. desktop)  */
 @media screen and (min-width:481px) {
   body, .header, .footer, .navigation {
     width: 960px;
