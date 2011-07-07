@@ -13,6 +13,7 @@
   }
   img, object {
     max-width: 100%;
+    width: 100%;
   }
   div.narrow {
     width: 50%;
@@ -29,7 +30,10 @@
   <p><img src="wales.jpg" alt="Pocket Kite in Wales" /></p>
   
   <p>Width, height tags</p>
-  <p><img src="wales.jpg" alt="Pocket Kite in Wales" width="1024" height="683") />
+  <p><img src="wales.jpg" alt="Pocket Kite in Wales" width="1024" height="683" /></p>
+  
+  <p>Width, height tags set in inline style attribute</p>
+  <p><img src="wales.jpg" alt="Pocket Kite in Wales" style="width:1024px;height:683px" /></p>
 </div>
 </body>
 </html>
