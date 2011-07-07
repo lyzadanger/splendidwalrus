@@ -13,6 +13,7 @@
   }
   img, object {
     width: 100%;
+    height: auto;
   }
   div.narrow {
     width: 50%;
