@@ -12,7 +12,6 @@
     width: 100%;
   }
   img, object {
-    max-width: 100%;
     width: 100%;
   }
   div.narrow {
